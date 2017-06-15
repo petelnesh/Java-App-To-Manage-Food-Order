@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item
+       android:title="@string/your_details">
+<menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/your_location"
+            android:title="@string/your_location"/>
+    </group>
+</menu>
+   </item>
+    <item android:id="@+id/myorder"
+        android:title="Orders"></item>
+    <item
+        android:id="@+id/regional"
+        android:title="@string/cuisines_available"
+        >
+        <menu>
+    <group android:checkableBehavior="single"
+        android:id="@+id/hideshow">
+        <item
+            android:id="@+id/asian"
+            android:title="@string/asian" />
+        <item
+            android:id="@+id/american"
+            android:title="@string/american" />
+        <item
+            android:id="@+id/chinese"
+            android:title="@string/chinese" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Settings and Infor:">
+<menu>
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        />
+    <item android:id="@+id/infor"
+        android:title="Infor about us"
+        android:icon="@android:drawable/ic_dialog_info"/>
+
+    </group>
+</menu>
+</item>
+</menu>
